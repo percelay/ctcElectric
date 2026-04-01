@@ -122,19 +122,13 @@ export default function HomePage() {
   return (
     <>
       {/* ─── HERO ────────────────────────────────────────────── */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-
-        {/* American flag — full background, no tint */}
-        <div className="absolute inset-0">
-          <Image
-            src="/American-Flag-Facts-Fun-Things-To-Know.jpg"
-            alt="American flag"
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
-        </div>
+      <section
+        className="relative min-h-screen flex items-center overflow-hidden"
+        style={{
+          background:
+            "linear-gradient(135deg, #B22234 0%, #B22234 30%, #ffffff 50%, #3C3B6E 70%, #3C3B6E 100%)",
+        }}
+      >
 
         {/* Content — opaque panels keep flag fully visible */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 lg:py-32">
