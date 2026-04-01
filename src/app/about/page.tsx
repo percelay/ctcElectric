@@ -96,8 +96,8 @@ export default function AboutPage() {
       <section className="relative bg-navy-950 py-28 lg:py-36 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/HARDHAT.jpg"
-            alt="CTC Electrical team"
+            src="/newconstruction.webp"
+            alt="CTC Electrical new construction"
             fill
             className="object-cover opacity-20"
             priority
@@ -315,8 +315,8 @@ export default function AboutPage() {
             {/* Image */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl">
               <Image
-                src="/PEOPLEWORKING.jpg"
-                alt="CTC Electrical team working"
+                src="/greatphoto.webp"
+                alt="Charles 'The Chaz' Clugston on the job"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -26,7 +26,7 @@ const services = [
     title: "Commercial Electrical",
     excerpt:
       "New construction electrical and commercial maintenance for warehouses, offices, storefronts, municipal buildings, car dealerships, and colleges.",
-    image: "/COMMERCIAL2.jpg",
+    image: "/newconstruction2.webp",
   },
   {
     id: "industrial",
@@ -34,7 +34,7 @@ const services = [
     title: "Industrial Electric",
     excerpt:
       "Spokane's leading industrial electrical contractor — from warehouses to dams. Wiring installation, maintenance, and transparent industrial inspections.",
-    image: "/INDUSTRAIL1.jpg",
+    image: "/wirignboxes.webp",
   },
   {
     id: "residential",
@@ -42,7 +42,7 @@ const services = [
     title: "Residential Electrical",
     excerpt:
       "Licensed, bonded, and insured residential and new construction wiring with infrared technology for code compliance, safety, and craftsmanship guarantees.",
-    image: "/RESIDENTIAL.jpg",
+    image: "/residential.webp",
   },
   {
     id: "emergency",
@@ -50,7 +50,7 @@ const services = [
     title: "Emergency Electrician",
     excerpt:
       "When the lights go out, our emergency electricians are available 24/7 to provide fast and reliable service.",
-    image: "/TRUCK1.jpg",
+    image: "/trucks.webp",
   },
 ];
 
@@ -323,8 +323,8 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
                 <Image
-                  src="/PEOPLEWORKING.jpg"
-                  alt="CTC Electrical team at work"
+                  src="/greatphoto.webp"
+                  alt="Charles 'The Chaz' Clugston on the job"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"

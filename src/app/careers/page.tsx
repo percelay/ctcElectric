@@ -47,8 +47,8 @@ export default function CareersPage() {
       <section className="relative bg-navy-950 py-28 lg:py-36 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/PEOPLEWORKING.jpg"
-            alt="CTC Electrical team working"
+            src="/newconstruction2.webp"
+            alt="CTC Electrical new construction work"
             fill
             className="object-cover opacity-25"
             priority
@@ -121,8 +121,8 @@ export default function CareersPage() {
             {/* Image */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
               <Image
-                src="/TRUCK1.jpg"
-                alt="CTC Electrical service vehicle"
+                src="/trucks.webp"
+                alt="CTC Electrical service trucks"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

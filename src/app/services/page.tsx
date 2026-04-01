@@ -25,7 +25,7 @@ const services = [
     icon: Building2,
     title: "Commercial Electrical",
     tagline: "Spokane's Top Commercial Electrical Contractors",
-    image: "/COMMERCIAL3.jpg",
+    image: "/commercial1.webp",
     imageAlt: "Commercial electrical work",
     description:
       "As Spokane's top commercial electrical contractors, we provide new construction electrical and commercial electrical maintenance. Our 24-hour fast, friendly, reliable, and professional service supports warehouses, offices, store fronts, municipal buildings, car dealerships, and colleges. We work from the bidding process through to completion to ensure projects meet specifications, budgets, and timelines. Preventative maintenance inspections are offered to keep properties safe and prevent major electrical problems.",
@@ -46,8 +46,8 @@ const services = [
     icon: Zap,
     title: "Industrial Electric",
     tagline: "Spokane's Leading Industrial Electrical Contractor",
-    image: "/INDUSTRAIL1.jpg",
-    imageAlt: "Industrial electrical work",
+    image: "/wirignboxes.webp",
+    imageAlt: "Industrial electrical wiring and boxes",
     description:
       "CTC is Spokane's leading industrial electrical contractor, providing services ranging from warehouses to dams. We specialize in industrial wiring installation and maintenance, ensuring facilities meet municipal codes. We conduct transparent, value-driven industrial electrical inspections, including pre-purchase, annual, pre-design, pre-listing, and trouble-shooting inspections to prevent harm, fires, and downtime.",
     highlights: [
@@ -67,7 +67,7 @@ const services = [
     icon: Home,
     title: "Residential Electrical Contractors",
     tagline: "Licensed, Bonded & Insured Residential Specialists",
-    image: "/RESIDENTIAL1.jpg",
+    image: "/residential.webp",
     imageAlt: "Residential electrical work",
     description:
       "We specialize in residential and new construction wiring in the Spokane region. Our licensed, bonded, and insured contractors use the latest installation tools and infrared technology to ensure code compliance and safety. We guarantee our craftsmanship to prevent hazards like electrocution, fire, and damaged appliances, and we assist with the permit application process.",
@@ -88,8 +88,8 @@ const services = [
     icon: AlertTriangle,
     title: "Emergency Electrician",
     tagline: "Available Around the Clock — 365 Days a Year",
-    image: "/TRUCK1.jpg",
-    imageAlt: "CTC Electrical service truck",
+    image: "/trucks.webp",
+    imageAlt: "CTC Electrical service trucks",
     description:
       "When the lights go out, our emergency electricians are available 24/7 to provide fast and reliable service.",
     highlights: [
@@ -111,8 +111,8 @@ export default function ServicesPage() {
       <section className="relative py-28 lg:py-36 overflow-hidden bg-navy-950">
         <div className="absolute inset-0">
           <Image
-            src="/COMMERCIAL2.jpg"
-            alt="Commercial electrical services"
+            src="/electrical1.jpg"
+            alt="CTC Electrical professional services"
             fill
             className="object-cover object-center opacity-25"
             priority

@@ -50,8 +50,8 @@ export default function ContactPage() {
       <section className="relative bg-navy-950 py-28 lg:py-36 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/COMMERCIAL4.jpg"
-            alt="CTC Electrical office and shop"
+            src="/wiring1.webp"
+            alt="CTC Electrical professional wiring work"
             fill
             className="object-cover opacity-20"
             priority
