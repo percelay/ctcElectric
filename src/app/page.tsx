@@ -12,6 +12,7 @@ import {
   ChevronRight,
   MapPin,
   CheckCircle,
+  Star,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -66,6 +67,55 @@ const trustItems = [
   { icon: Award, label: "Master Electricians On Staff" },
   { icon: Zap, label: "On-Staff Degreed Engineer" },
   { icon: AlertTriangle, label: "24/7 Emergency Response" },
+  { icon: Star, label: "4.8 Stars · 85 Google Reviews" },
+];
+
+const reviews = [
+  {
+    name: "Alex Rodgers",
+    time: "4 years ago",
+    body: "Charles and his crew were like dealing with 'old time Americans'. Charles answered all my dumb questions. He actually listened, and made sure I understood procedures, and the plan to restore electrical damage after a house fire. The guys that actually did the repairs were personable, and knowledgeable, and had humor. Not just work robots. To me that shows working for CTC/Charles is more than just a job. I feel comfortable recommending CTC.",
+  },
+  {
+    name: "Google Reviewer",
+    time: "Within the past year",
+    body: "Charles the owner and his crews conquer projects big and small with the same care and professionalism. They have installed 400 amp service for us all the way down to installing a car charger. If there's a problem Charles goes out of his way to fix the problem and make sure that everything is to the customer's satisfaction. He always tries to do things the most affordable way that he can for the customer and pass the savings on to them. CTC is my go-to electrician company.",
+  },
+  {
+    name: "Alyshia Keefer",
+    time: "1 year ago",
+    body: "My husband and I are so thankful and appreciative of CTC Electrical Contracting Inc. After a power surge left us with no power to our dryer, Charles asked for a picture of the breaker and talked us through testing everything over the phone. I would give him 500 stars if I could. Will be my go to for anything Electrical from now on!!",
+  },
+  {
+    name: "Denise LaFaunce",
+    time: "2 years ago",
+    body: "If you are looking for a professional that will be on time, communicate clearly, complete the work exactly as you desire and provide a level of service rarely found these days, we highly recommend Charles for your home needs. We were very happy with his level of expertise and glad to see that there are professionals like him still making homes brighter for us.",
+  },
+  {
+    name: "Al Fluke",
+    time: "5 years ago",
+    body: "Over the past year I have been unfortunate to need an electrician several times, but also fortunate enough to have CTC in my corner. The knowledge of this team is unrivaled in this region. They are very responsive and most recently exceeded my expectations. It is never fun to have a repair needed, but I am comfortable knowing that I am in the hands of CTC because I know they will deliver quality service at a fair price.",
+  },
+  {
+    name: "Angela Lamb",
+    time: "7 years ago",
+    body: "Charles was very helpful, professional, and went the extra mile for us! We are finishing our basement and he did all the electrical. He saved us tons of money over other quotes by rearranging our panel instead of us having to get a sub panel — he was full of good suggestions for our situation and took the time to make sure it was all done right. Recommending him to friends and family for sure!",
+  },
+  {
+    name: "Heidi Weber",
+    time: "7 years ago",
+    body: "I recently contacted CTC for a last minute electrical inspection and bid for work on my dad's 1953 home. Charles was professional, very thorough, and easy to work with. His electrical knowledge was top notch and he gave sound advice and kept in touch. He exceeded my dad's expectations, which is not easy to do, and we highly recommend CTC.",
+  },
+  {
+    name: "Zac Farrell",
+    time: "4 years ago",
+    body: "We have had the pleasure of working with CTC over the last few years. Charles truly has never let us down and has been amazing to work with. Whether it's a minor repair or an entire panel upgrade, CTC has quickly, efficiently and affordably taken care of us. Can't say enough great things about these guys, highly recommend working with them!!",
+  },
+  {
+    name: "Melissa Fritsch",
+    time: "6 years ago",
+    body: "I had a challenge of troubleshooting an electrical problem in our new home. Charles at CTC Electrical Contracting seriously put in some extra man power in figuring out a previous botched up job. Very impressed with his professionalism and quality workmanship as he pushed beyond his work hours to get the job done right. Plus, he didn't charge us for an extra hour of work. We will continue to call upon this company in the future.",
+  },
 ];
 
 export default function HomePage() {
@@ -195,13 +245,13 @@ export default function HomePage() {
       {/* ─── TRUST BAR ───────────────────────────────────────── */}
       <section className="bg-navy-900 border-y border-navy-700 py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
             {trustItems.map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/20 flex items-center justify-center shrink-0">
-                  <Icon className="w-5 h-5 text-gold-400" />
+                <div className={`w-10 h-10 rounded-lg flex items-center justify-center shrink-0 ${label.includes("Google") ? "bg-gold-500/20 border border-gold-400/40" : "bg-gold-500/10 border border-gold-500/20"}`}>
+                  <Icon className={`w-5 h-5 ${label.includes("Google") ? "text-gold-300 fill-gold-300" : "text-gold-400"}`} />
                 </div>
-                <span className="font-sans text-sm font-medium text-slate-200 leading-tight">
+                <span className={`font-sans text-sm font-medium leading-tight ${label.includes("Google") ? "text-gold-300 font-bold" : "text-slate-200"}`}>
                   {label}
                 </span>
               </div>
@@ -336,6 +386,108 @@ export default function HomePage() {
                 Learn More About CTC <ChevronRight className="w-5 h-5" />
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── TESTIMONIALS ────────────────────────────────────── */}
+      <section className="py-24 bg-navy-950">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Header + Google rating badge */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+            <div>
+              <div className="font-sans text-gold-400 text-sm font-bold uppercase tracking-widest mb-3">
+                What Our Customers Say
+              </div>
+              <h2 className="font-display font-black text-5xl lg:text-6xl text-white uppercase leading-none">
+                Real Reviews.<br />Real Results.
+              </h2>
+            </div>
+            {/* Google rating badge */}
+            <a
+              href="https://www.google.com/search?q=ctc+electrical+wa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-5 bg-white rounded-2xl px-8 py-5 shrink-0 hover:bg-slate-50 transition-colors duration-200 shadow-xl"
+            >
+              <div>
+                <div className="flex items-center gap-1 mb-1">
+                  {[1, 2, 3, 4, 5].map((n) => (
+                    <Star
+                      key={n}
+                      className={`w-6 h-6 ${n <= 4 ? "text-gold-500 fill-gold-500" : "text-gold-400 fill-gold-400"}`}
+                    />
+                  ))}
+                </div>
+                <div className="font-display font-black text-4xl text-navy-900 leading-none">
+                  4.8
+                </div>
+              </div>
+              <div className="border-l border-slate-200 pl-5">
+                <div className="font-sans font-bold text-navy-900 text-lg leading-tight">
+                  85 Reviews
+                </div>
+                <div className="font-sans text-slate-500 text-sm">
+                  on Google
+                </div>
+                <div className="font-sans text-gold-600 text-xs font-bold mt-1 uppercase tracking-wide">
+                  View All →
+                </div>
+              </div>
+            </a>
+          </div>
+
+          {/* Review cards — masonry-style 3-col grid */}
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+            {reviews.map(({ name, time, body }) => (
+              <div
+                key={name + time}
+                className="break-inside-avoid bg-navy-900 border border-navy-700 rounded-2xl p-6 hover:border-gold-500/40 transition-colors duration-300"
+              >
+                {/* Stars */}
+                <div className="flex items-center gap-0.5 mb-3">
+                  {[1, 2, 3, 4, 5].map((n) => (
+                    <Star key={n} className="w-4 h-4 text-gold-400 fill-gold-400" />
+                  ))}
+                </div>
+                {/* Quote */}
+                <p className="font-sans text-slate-300 text-sm leading-relaxed mb-5">
+                  &ldquo;{body}&rdquo;
+                </p>
+                {/* Reviewer */}
+                <div className="flex items-center justify-between">
+                  <div>
+                    <div className="font-sans font-semibold text-white text-sm">
+                      {name}
+                    </div>
+                    <div className="font-sans text-slate-500 text-xs">{time}</div>
+                  </div>
+                  <div className="font-sans text-xs text-slate-600 flex items-center gap-1">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    Google
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* View all link */}
+          <div className="text-center mt-12">
+            <a
+              href="https://www.google.com/search?q=ctc+electrical+wa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-navy-800 hover:bg-navy-700 border border-navy-600 text-slate-200 font-sans font-bold px-8 py-4 rounded-xl transition-colors duration-200"
+            >
+              <Star className="w-4 h-4 text-gold-400 fill-gold-400" />
+              Read All 85 Google Reviews
+            </a>
           </div>
         </div>
       </section>
