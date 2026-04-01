@@ -62,7 +62,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 mb-5 group">
               <div className="relative w-12 h-12 shrink-0">
                 <Image
-                  src="/logoctc.png"
+                  src="/Gemini_Generated_Image_y52zfoy52zfoy52z.png"
                   alt="CTC Electrical Contracting"
                   fill
                   className="object-contain"

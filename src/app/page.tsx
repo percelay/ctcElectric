@@ -74,84 +74,84 @@ export default function HomePage() {
       {/* ─── HERO ────────────────────────────────────────────── */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
 
-        {/* Background photo + overlay */}
+        {/* American flag — full background, no tint */}
         <div className="absolute inset-0">
           <Image
-            src="/COMMERCIALWORK1.jpg"
-            alt="CTC Electrical commercial work"
+            src="/American-Flag-Facts-Fun-Things-To-Know.jpg"
+            alt="American flag"
             fill
             className="object-cover object-center"
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-navy-950/80" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-transparent" />
         </div>
 
-        {/* Content */}
+        {/* Content — opaque panels keep flag fully visible */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-24 lg:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
 
-            {/* Left: text content */}
+            {/* Left: text on opaque navy card */}
             <div className="lg:col-span-3">
-              {/* Logo */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="relative w-16 h-16 shrink-0">
-                  <Image
-                    src="/logoctc.png"
-                    alt="CTC Electrical Contracting"
-                    fill
-                    className="object-contain"
-                    sizes="64px"
-                    priority
-                  />
-                </div>
-                <div>
-                  <div className="font-display font-black text-xl text-white tracking-widest uppercase leading-tight">
-                    CTC Electrical Contracting
+              <div className="bg-navy-950/95 backdrop-blur-sm rounded-2xl p-8 lg:p-10 shadow-2xl">
+                {/* Logo */}
+                <div className="flex items-center gap-4 mb-7">
+                  <div className="relative w-16 h-16 shrink-0">
+                    <Image
+                      src="/Gemini_Generated_Image_y52zfoy52zfoy52z.png"
+                      alt="CTC Electrical Contracting"
+                      fill
+                      className="object-contain"
+                      sizes="64px"
+                      priority
+                    />
                   </div>
-                  <div className="font-sans text-sm text-gold-500 tracking-wider uppercase font-medium">
-                    Spokane, WA · Commercial &amp; Industrial
+                  <div>
+                    <div className="font-display font-black text-xl text-white tracking-widest uppercase leading-tight">
+                      CTC Electrical Contracting
+                    </div>
+                    <div className="font-sans text-sm text-gold-400 tracking-wider uppercase font-medium">
+                      Spokane, WA · Commercial &amp; Industrial
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Headline */}
-              <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white uppercase leading-none tracking-tight mb-6">
-                Your Spokane{" "}
-                <span className="text-gold-400">Commercial</span>{" "}
-                Electrician
-              </h1>
+                {/* Headline */}
+                <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-white uppercase leading-none tracking-tight mb-5">
+                  Your Spokane{" "}
+                  <span className="text-gold-400">Commercial</span>{" "}
+                  Electrician
+                </h1>
 
-              {/* Subheadline */}
-              <p className="font-sans text-lg lg:text-xl text-slate-200 leading-relaxed max-w-xl mb-10">
-                When you are in need of a Commercial Electrician or an Industrial
-                Electrical Contractor and you want the job done fast with an eye
-                for quality, look no further than CTC Electrical Contracting, Inc.
-              </p>
+                {/* Subheadline */}
+                <p className="font-sans text-base lg:text-lg text-slate-300 leading-relaxed mb-8">
+                  When you are in need of a Commercial Electrician or an Industrial
+                  Electrical Contractor and you want the job done fast with an eye
+                  for quality, look no further than CTC Electrical Contracting, Inc.
+                </p>
 
-              {/* CTAs */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a
-                  href="tel:5092906940"
-                  className="flex items-center justify-center gap-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold font-sans text-lg px-8 py-4 rounded-xl transition-colors duration-200"
-                >
-                  <Phone className="w-5 h-5" />
-                  Call Today · (509) 290-6940
-                </a>
-                <a
-                  href="tel:5096306266"
-                  className="flex items-center justify-center gap-3 bg-red-700 hover:bg-red-600 text-white font-bold font-sans text-lg px-8 py-4 rounded-xl transition-colors duration-200"
-                >
-                  <AlertTriangle className="w-5 h-5" />
-                  24/7 Emergency · (509) 630-6266
-                </a>
+                {/* CTAs */}
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="tel:5092906940"
+                    className="flex items-center justify-center gap-3 bg-gold-500 hover:bg-gold-400 text-navy-950 font-bold font-sans text-lg px-7 py-4 rounded-xl transition-colors duration-200"
+                  >
+                    <Phone className="w-5 h-5" />
+                    Call Today · (509) 290-6940
+                  </a>
+                  <a
+                    href="tel:5096306266"
+                    className="flex items-center justify-center gap-3 bg-red-700 hover:bg-red-600 text-white font-bold font-sans text-lg px-7 py-4 rounded-xl transition-colors duration-200"
+                  >
+                    <AlertTriangle className="w-5 h-5" />
+                    24/7 Emergency · (509) 630-6266
+                  </a>
+                </div>
               </div>
             </div>
 
-            {/* Right: The Chaz card */}
+            {/* Right: The Chaz card — white, clean */}
             <div className="lg:col-span-2 flex justify-center lg:justify-end">
-              <div className="bg-white rounded-2xl shadow-2xl shadow-navy-950/60 overflow-hidden max-w-xs w-full">
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden max-w-xs w-full">
                 <div className="relative w-full aspect-[3/4]">
                   <Image
                     src="/the-chaz.jpg"

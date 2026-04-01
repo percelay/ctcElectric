@@ -6,6 +6,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone, Menu, X, AlertTriangle } from "lucide-react";
 
+const LOGO = "/Gemini_Generated_Image_y52zfoy52zfoy52z.png";
+
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
@@ -27,20 +29,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Emergency top bar */}
-      <div className="bg-red-700 text-white text-sm py-2 px-4 text-center font-sans font-medium">
-        <div className="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
-          <AlertTriangle className="w-4 h-4 shrink-0" />
-          <span>24/7 Emergency Service Available:</span>
-          <a
-            href="tel:5096306266"
-            className="font-bold underline underline-offset-2 hover:text-red-100 transition-colors duration-200"
-          >
-            (509) 630-6266
-          </a>
-        </div>
-      </div>
-
       {/* Main header */}
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
@@ -60,7 +48,7 @@ export default function Header() {
             >
               <div className="relative w-12 h-12 shrink-0">
                 <Image
-                  src="/logoctc.png"
+                  src={LOGO}
                   alt="CTC Electrical Contracting logo"
                   fill
                   className="object-contain"
