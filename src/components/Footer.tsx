@@ -114,7 +114,7 @@ export default function Footer() {
             <h3 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-4 pb-2 border-b border-navy-700">
               Navigation
             </h3>
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-2 mb-6">
               {navLinks.map((l) => (
                 <li key={l.href}>
                   <Link
@@ -126,6 +126,20 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            <h3 className="font-display font-bold text-white uppercase tracking-wider text-sm mb-4 pb-2 border-b border-navy-700">
+              Sister Company
+            </h3>
+            <a
+              href="https://ctcmassnotification.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-sans text-slate-400 text-sm hover:text-gold-400 transition-colors duration-200 block leading-snug"
+            >
+              CTC Mass Notification Systems →
+            </a>
+            <div className="font-sans text-slate-600 text-xs mt-1">
+              Sirens · Alerts · Emergency Systems
+            </div>
           </div>
 
           {/* Contact column */}

@@ -560,6 +560,90 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ─── SISTER COMPANY ─────────────────────────────────── */}
+      <section className="py-20 bg-slate-100 border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            {/* Text */}
+            <div>
+              <div className="font-sans text-navy-700 text-xs font-bold uppercase tracking-widest mb-3">
+                Also From Charles &quot;The Chaz&quot; Clugston
+              </div>
+              <h2 className="font-display font-black text-4xl lg:text-5xl text-navy-900 uppercase leading-none mb-4">
+                CTC Mass Notification Systems
+              </h2>
+              <p className="font-sans text-slate-600 text-lg leading-relaxed mb-6">
+                The same trusted leadership behind CTC Electrical also leads the region&apos;s
+                premier mass notification company. From outdoor warning sirens and Giant Voice
+                systems to emergency text alerts, tone radios, and digital readerboards —
+                CTC Mass Notification delivers turn-key emergency alert solutions for facilities,
+                municipalities, and industrial sites.
+              </p>
+              <ul className="grid grid-cols-2 gap-y-2 gap-x-4 mb-8">
+                {[
+                  "Outdoor warning sirens",
+                  "Giant Voice systems",
+                  "Emergency text alerts",
+                  "Tone alert radios",
+                  "Telephone call-outs",
+                  "Digital readerboards",
+                  "Site sound audits",
+                  "Facility training & maintenance",
+                ].map((item) => (
+                  <li key={item} className="flex items-center gap-2 font-sans text-slate-700 text-sm">
+                    <CheckCircle className="w-4 h-4 text-navy-700 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href="https://ctcmassnotification.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white font-bold font-sans px-7 py-3.5 rounded-xl transition-colors duration-200"
+              >
+                Visit CTC Mass Notification
+                <ChevronRight className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Visual panel */}
+            <div className="bg-navy-900 rounded-2xl p-8 text-center">
+              <div className="font-display font-black text-6xl text-white uppercase leading-none tracking-tight mb-2">
+                We Give You
+              </div>
+              <div className="font-display font-black text-6xl text-gold-400 uppercase leading-none tracking-tight mb-6">
+                The Power
+              </div>
+              <div className="h-px bg-navy-700 mb-6" />
+              <div className="grid grid-cols-3 gap-4 mb-6">
+                {["Sirens", "Alerts", "Radios"].map((item) => (
+                  <div key={item} className="bg-navy-800 rounded-xl py-4">
+                    <div className="font-display font-bold text-lg text-white uppercase">{item}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="font-sans text-slate-400 text-sm mb-1">Authorized distributor &amp; installer</div>
+              <div className="font-sans text-gold-400 text-sm font-semibold">
+                Whelen Engineering · CentrAlert · Bytel
+              </div>
+              <div className="mt-5 pt-5 border-t border-navy-700">
+                <a
+                  href="https://ctcmassnotification.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-gold-400 hover:text-gold-300 text-sm font-bold transition-colors duration-200"
+                >
+                  ctcmassnotification.com →
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
       {/* ─── FINAL CTA ───────────────────────────────────────── */}
       <section className="py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
