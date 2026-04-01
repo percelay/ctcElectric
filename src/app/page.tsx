@@ -162,7 +162,7 @@ export default function HomePage() {
                 {/* Headline */}
                 <h1 className="font-display font-black text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-white uppercase leading-none tracking-tight mb-5">
                   Your Spokane{" "}
-                  <span className="text-gold-400">Commercial</span>{" "}
+                  <span className="text-gold-400">Do-It-All</span>{" "}
                   Electrician
                 </h1>
 
